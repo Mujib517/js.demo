@@ -12,10 +12,10 @@
 // Server side apps (api, websites)
 //1sec
 // 2hrs
-for (var i = 0; i < 100000000000; i++) {
-    ///kadjfkadjfkjakdf
-    setTimeout(function () { console.log(i) }, 0);
-}
+// for (var i = 0; i < 100000000000; i++) {
+//     ///kadjfkadjfkjakdf
+//     setTimeout(function () { console.log(i) }, 0);
+// }
 
 
 //select * from students   2sec
@@ -45,10 +45,10 @@ function fnAsync(a, b, cb) {
 
 //entity 2
 
-function callback(res) {
-    console.log(res);
-}
-fnAsync(10, 20, callback);
+// function callback(res) {
+//     console.log(res);
+// }
+fnAsync(10, 20, (res)=>console.log(res));
 
 
 // creditcard 5sec  freezed
