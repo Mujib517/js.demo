@@ -1,6 +1,7 @@
 function DefaultCtrl() {
 
     this.get = function (req, res) {
+        res.status(200);
         res.send("Hello Express");
     }
 
@@ -8,7 +9,7 @@ function DefaultCtrl() {
         var obj = {
             status: 'Up'
         };
-
+        res.status(200); //OK
         res.json(obj);
     }
 }
