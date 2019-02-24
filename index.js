@@ -18,3 +18,5 @@ app.get('/health', defaultCtrl.health);
 app.get('/books', bookCtrl.get);
 app.get('/books/:id', bookCtrl.getById);
 app.post('/books', bookCtrl.post);
+app.delete('/books/:id', bookCtrl.remove);
+app.put('/books/:id', bookCtrl.update);
